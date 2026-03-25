@@ -59,3 +59,87 @@ https://github.com/Wiz-Tanay/CalBurntPredictor.git
 ---
 
 ## 📂 Project Structure
+
+- `.vscode/` – editor settings  
+- `app.py` – Streamlit web app  
+- `CalBurntAnalysis.ipynb` – model training & analysis  
+- `calories.csv` – dataset  
+- `results.csv` – model evaluation results  
+- `requirements.txt` – dependencies  
+- `scaler.pkl` – data scaler  
+
+### Models
+- `lr.pkl` – Linear Regression  
+- `dt.pkl` – Decision Tree  
+- `rf.pkl` – Random Forest  
+- `xgb.pkl`, `xgb_model.pkl` – XGBoost  
+
+### Visualizations
+- `comparison.png`  
+- `*_feature.png` – feature importance plots  
+- `*_plot.png` – prediction plots  
+
+---
+
+## ⚙️ How It Works
+
+1. User inputs:
+   - Age  
+   - Gender  
+   - Height & Weight  
+   - Duration of exercise  
+   - Heart rate  
+   - Body temperature  
+
+2. Input is scaled using `scaler.pkl`  
+3. Data is passed into trained ML models  
+4. Predictions are generated  
+5. Best-performing model result is displayed  
+
+---
+
+## ▶️ Run Locally
+
+### 1. Clone the repository
+
+git clone https://github.com/Wiz-Tanay/CalBurntPredictor.git  
+cd CalBurntPredictor  
+
+### 2. Install dependencies
+
+pip install -r requirements.txt  
+
+### 3. Run the app
+
+streamlit run app.py  
+
+---
+
+## 📌 Key Highlights
+
+- ✔️ End-to-end ML pipeline (Data → Training → Deployment)  
+- ✔️ Multiple models with comparison  
+- ✔️ Real-time prediction system  
+- ✔️ Deployed Streamlit application  
+
+---
+
+## 🚧 Future Improvements
+
+- Add deep learning models  
+- Improve UI navigation  
+- Add user history tracking  
+- Deploy backend API  
+
+---
+
+## 👨‍💻 Author
+
+**Tanay Pandey**  
+https://github.com/Wiz-Tanay  
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
